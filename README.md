@@ -1,7 +1,7 @@
 ### Notes
 
-> [IP sweep](#ip-sweep)
-> [Mass Lock](#mass-lock)
+- [IP sweep](#ip-sweep)
+- [Mass Lock](#mass-lock)
 
 ## IP Sweep
 ```
