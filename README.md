@@ -1,10 +1,10 @@
 ### Notes
 
-1: [IP sweep](#ip-sweep)
-2: [Mass Lock](#mass-lock)
+> [IP sweep](#ip-sweep)
+> [Mass Lock](#mass-lock)
 
 ## IP Sweep
-'''
+```
 
 #!/bin/bash
 
@@ -12,11 +12,11 @@ for ip in 'seq 1 254' ; do
 ping -c 1 $1.$ip | grep "64 bytes" | cit -d " " -f 4 | tr -d ":" &
 done
 
-'''
+```
 
 ## Mass lock
 
-'''
+```
 #!/bin/bash
 
 <!-Read IP addresses from a file->
@@ -31,4 +31,4 @@ done < "$ips_file"
 for system in "${ips[@]}"; do
     ssh root@$system "xscreensaver-command -lock"
 done
-'''
+```
