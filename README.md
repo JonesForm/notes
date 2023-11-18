@@ -2,6 +2,7 @@
 
 - [IP sweep](#ip-sweep)
 - [Mass Lock](#mass-lock)
+- [Notification Message](#Send-notification-message)
 
 ## IP Sweep
 ```
@@ -37,4 +38,9 @@ done < "$ips_file"
 for system in "${ips[@]}"; do
     ssh root@$system "xscreensaver-command -lock"
 done
+```
+
+## Send notification message
+```
+notify-send -H <receiving_computer_ip_address> "Your Message Here"
 ```
